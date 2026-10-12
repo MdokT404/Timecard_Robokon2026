@@ -1,153 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#F5F5F5"
+        android:background="#F0F2F5"
+        android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="32dp">
 
-        <!-- 1. デジタル時計（常時秒まで表示） -->
+        <!-- 1. デジタル時計（すっきりしたサイズに調整） -->
         <TextView
             android:id="@+id/tv_digital_clock"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="24dp"
-            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-monospace"
             android:text="00:00:00"
-            android:textColor="#333333"
-            android:textSize="64sp"
+            android:textColor="#1A1A1A"
+            android:textSize="56sp"
             android:textStyle="bold" />
 
         <!-- 2. 5桁ID入力欄 -->
         <EditText
             android:id="@+id/et_user_id"
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center_horizontal"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
             android:layout_marginBottom="32dp"
             android:background="@android:drawable/editbox_background_normal"
             android:gravity="center"
-            android:hint="ID(学籍番号)を入力"
+            android:hint="5桁のIDを入力"
             android:inputType="number"
             android:maxLength="5"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
-        <!-- 3. 打刻ボタンエリア（格子状に配置） -->
+        <!-- 3. 打刻ボタンエリア（最大幅を制限して横長に伸びるのを防止） -->
         <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_width="560dp"
+            android:layout_height="wrap_content"
             android:alignmentMode="alignBounds"
             android:columnCount="2"
-            android:columnOrderPreserved="false"
             android:rowCount="3">
 
             <Button
                 android:id="@+id/btn_in_1"
-                android:layout_width="0dp"
-                android:layout_height="521dp"
-                android:layout_row="0"
-                android:layout_rowWeight="1"
-                android:layout_column="0"
-                android:layout_columnWeight="1"
+                android:layout_width="264dp"
+                android:layout_height="75dp"
                 android:layout_margin="8dp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#2E7D32"
                 android:text="出勤1"
-                android:textSize="24sp"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn_in_2"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
+                android:layout_width="264dp"
+                android:layout_height="75dp"
                 android:layout_margin="8dp"
-                android:backgroundTint="#2E7D32"
+                android:backgroundTint="#388E3C"
                 android:text="出勤2"
-                android:textSize="24sp"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn_in_3"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
+                android:layout_width="264dp"
+                android:layout_height="75dp"
                 android:layout_margin="8dp"
-                android:backgroundTint="#1B5E20"
+                android:backgroundTint="#4CAF50"
                 android:text="出勤3"
-                android:textSize="24sp"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn_out"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
+                android:layout_width="264dp"
+                android:layout_height="75dp"
                 android:layout_margin="8dp"
-                android:backgroundTint="#F44336"
+                android:backgroundTint="#D32F2F"
                 android:text="退勤"
-                android:textSize="24sp"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn_rest_in"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
+                android:layout_width="264dp"
+                android:layout_height="75dp"
                 android:layout_margin="8dp"
-                android:backgroundTint="#FF9800"
+                android:backgroundTint="#F57C00"
                 android:text="休憩IN"
-                android:textSize="24sp"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn_rest_out"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
+                android:layout_width="264dp"
+                android:layout_height="75dp"
                 android:layout_margin="8dp"
-                android:backgroundTint="#03A9F4"
+                android:backgroundTint="#1976D2"
                 android:text="休憩OUT"
-                android:textSize="24sp"
+                android:textSize="22sp"
                 android:textStyle="bold" />
         </GridLayout>
 
-        <!-- 4. 管理用ボタンエリア（最下部） -->
-        <LinearLayout
+        <!-- 余白調整用 -->
+        <View
             android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- 4. 管理用ボタンエリア（横に広がりすぎないサイズに） -->
+        <LinearLayout
+            android:layout_width="560dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_reload_master"
                 android:layout_width="0dp"
-                android:layout_height="55dp"
+                android:layout_height="50dp"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
-                android:backgroundTint="#795548"
+                android:backgroundTint="#5D4037"
                 android:text="名簿マスタ更新"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <Button
                 android:id="@+id/btn_export"
                 android:layout_width="0dp"
-                android:layout_height="55dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
-                android:backgroundTint="#607D8B"
+                android:backgroundTint="#455A64"
                 android:text="ログを出力"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </LinearLayout>
 
     </LinearLayout>
