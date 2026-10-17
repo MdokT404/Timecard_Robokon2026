@@ -1,3 +1,13 @@
+@introduce
+
+HI, I'm Madoka Tamayura. 
+This Program has started 10/12/2026. 
+If U need some informations or has plobrems, plz contact to Me. 
+My github : https://github.com/MdokT404 
+X(Old Name : Twitter) : https://x.com/Saimu404@Information
+
+========================================================================================================================================================
+
 This is a Kotlin Multiplatform project targeting Android, iOS.
 
 * [/iosApp](./iosApp/iosApp) contains an iOS application. Even if you’re sharing your UI with Compose Multiplatform,
