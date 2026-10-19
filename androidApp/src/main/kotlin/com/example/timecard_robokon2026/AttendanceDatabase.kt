@@ -12,15 +12,9 @@ abstract class AttendanceDatabase : RoomDatabase() {
     companion object {
         @Volatile
         private var INSTANCE: AttendanceDatabase? = null
-
         fun getDatabase(context: Context): AttendanceDatabase {
             return INSTANCE ?: synchronized(this) {
-                val instance = Room.databaseBuilder(
-                    context.applicationContext,
-                    AttendanceDatabase::class.java,
-                    "attendance_database",
-                )
-                    //データ構造が変わった場合、データを初期化する設定
+                val instance = Room.databaseBuilder(context.applicationContext, AttendanceDatabase::class.java, "attendance_database",)
                     .fallbackToDestructiveMigration(dropAllTables = true)
                     .build()
                 INSTANCE = instance
