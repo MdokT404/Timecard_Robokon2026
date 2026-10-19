@@ -51,8 +51,8 @@
                 android:layout_width="264dp"
                 android:layout_height="75dp"
                 android:layout_margin="8dp"
-                android:backgroundTint="#2E7D32"
-                android:text="出勤1"
+                android:backgroundTint="#41FF3A"
+                android:text="出勤1(加工員)"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -61,8 +61,8 @@
                 android:layout_width="264dp"
                 android:layout_height="75dp"
                 android:layout_margin="8dp"
-                android:backgroundTint="#388E3C"
-                android:text="出勤2"
+                android:backgroundTint="#C2B2EF"
+                android:text="出勤2(会計員)"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -71,8 +71,8 @@
                 android:layout_width="264dp"
                 android:layout_height="75dp"
                 android:layout_margin="8dp"
-                android:backgroundTint="#4CAF50"
-                android:text="出勤3"
+                android:backgroundTint="#4AADFF"
+                android:text="出勤3(ロボット説明員)"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -81,7 +81,7 @@
                 android:layout_width="264dp"
                 android:layout_height="75dp"
                 android:layout_margin="8dp"
-                android:backgroundTint="#D32F2F"
+                android:backgroundTint="#FD5B5B"
                 android:text="退勤"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -126,7 +126,7 @@
                 android:layout_height="50dp"
                 android:layout_marginEnd="4dp"
                 android:layout_weight="1"
-                android:backgroundTint="#5D4037"
+                android:backgroundTint="#D5E006"
                 android:text="名簿マスタ更新"
                 android:textSize="13sp" />
 
@@ -137,7 +137,7 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginEnd="4dp"
                 android:layout_weight="1"
-                android:backgroundTint="#455A64"
+                android:backgroundTint="#4293C1"
                 android:text="ログを出力"
                 android:textSize="13sp" />
 
