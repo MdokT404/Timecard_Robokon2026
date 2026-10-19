@@ -12,7 +12,7 @@
         android:orientation="vertical"
         android:padding="32dp">
 
-        <!-- 1. デジタル時計（すっきりしたサイズに調整） -->
+        <!-- 1. デジタル時計 -->
         <TextView
             android:id="@+id/tv_digital_clock"
             android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
             android:maxLength="5"
             android:textSize="22sp" />
 
-        <!-- 3. 打刻ボタンエリア（最大幅を制限して横長に伸びるのを防止） -->
+        <!-- 3. 打刻ボタンエリア -->
         <GridLayout
             android:layout_width="560dp"
             android:layout_height="wrap_content"
@@ -113,7 +113,7 @@
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <!-- 4. 管理用ボタンエリア（横に広がりすぎないサイズに） -->
+        <!-- 4. 管理用ボタンエリア -->
         <LinearLayout
             android:layout_width="560dp"
             android:layout_height="wrap_content"
@@ -124,21 +124,32 @@
                 android:id="@+id/btn_reload_master"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="4dp"
                 android:layout_weight="1"
                 android:backgroundTint="#5D4037"
                 android:text="名簿マスタ更新"
-                android:textSize="14sp" />
+                android:textSize="13sp" />
 
             <Button
                 android:id="@+id/btn_export"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
                 android:layout_weight="1"
                 android:backgroundTint="#455A64"
                 android:text="ログを出力"
-                android:textSize="14sp" />
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btn_open_drive"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="#0F9D58"
+                android:text="Google Drive"
+                android:textSize="13sp" />
         </LinearLayout>
 
     </LinearLayout>
