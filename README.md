@@ -6,6 +6,10 @@ If U need some informations or has plobrems, plz contact to Me.
 My github : https://github.com/MdokT404 
 X(Old Name : Twitter) : https://x.com/Saimu404@Information
 
+@Notice
+If U debug to smartphone for this app, you have to Digital_clock font under 80.I reccomend to 75.
+If U debug to tablet for this app, you have to Digital_clock font under 100.I reccomend to 90.
+
 ========================================================================================================================================================
 
 This is a Kotlin Multiplatform project targeting Android, iOS.

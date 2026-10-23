@@ -8,7 +8,6 @@ import androidx.room.RoomDatabase
 @Database(entities = [AttendanceLog::class], version = 1, exportSchema = false)
 abstract class AttendanceDatabase : RoomDatabase() {
     abstract fun attendanceDao(): AttendanceDao
-
     companion object {
         @Volatile
         private var INSTANCE: AttendanceDatabase? = null
