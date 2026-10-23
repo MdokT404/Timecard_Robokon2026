@@ -62,10 +62,10 @@
                 android:id="@+id/btn_in_1"
                 android:layout_width="0dp"
                 android:layout_height="65dp"
-                android:layout_weight="1"
                 android:layout_marginEnd="4dp"
+                android:layout_weight="1"
                 android:backgroundTint="#41FF3A"
-                android:text="出勤1(加工員)"
+                android:text="出勤1(調理員)"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -95,7 +95,7 @@
                 android:layout_marginEnd="4dp"
                 android:layout_weight="1"
                 android:backgroundTint="#4AADFF"
-                android:text="出勤3(ロボット説明員)"
+                android:text="出勤3(宣伝員)"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
