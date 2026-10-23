@@ -27,7 +27,7 @@
         android:text="00:00:00"
         android:textAlignment="center"
         android:textColor="#1A1A1A"
-        android:textSize="75sp"
+        android:textSize="70sp"
         android:textStyle="bold" />
 
     <EditText
@@ -65,7 +65,7 @@
                 android:layout_marginEnd="4dp"
                 android:layout_weight="1"
                 android:backgroundTint="#41FF3A"
-                android:text="出勤1(調理員)"
+                android:text="出勤1(制作員)"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 

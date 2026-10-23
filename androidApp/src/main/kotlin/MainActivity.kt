@@ -149,7 +149,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // ボタンイベント
-        btnIn1.setOnClickListener { recordAction("出勤1(調理員)") }
+        btnIn1.setOnClickListener { recordAction("出勤1(制作員)") }
         btnIn2.setOnClickListener { recordAction("出勤2(会計員)") }
         btnIn3.setOnClickListener { recordAction("出勤3(宣伝員)") }
         btnOut.setOnClickListener { recordAction("退勤") }
@@ -196,7 +196,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
-            uploadToGoogleDriveApi(folderId = "17mRnzyxzlAe3UzQqHnDWg3q-hEgN5EBZ", filename = "attendance_fixed_sync.csv", csvData = csvString)
+            uploadToGoogleDriveApi(folderId = "1NlTc2YswYVFXxLSvD08PYjuc1Ev1UOgz", filename = "attendance_fixed_sync.csv", csvData = csvString)
         } catch (e: Exception) {
             e.printStackTrace()
         }
@@ -447,7 +447,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openGoogleDriveFolder() {
-        val driveUri = "https://drive.google.com/drive/folders/17mRnzyxzlAe3UzQqHnDWg3q-hEgN5EBZ".toUri()
+        val driveUri = "https://drive.google.com/drive/folders/1NlTc2YswYVFXxLSvD08PYjuc1Ev1UOgz".toUri()
         val intent = Intent(Intent.ACTION_VIEW, driveUri)
         try {
             startActivity(intent)
